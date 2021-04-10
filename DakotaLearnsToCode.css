@@ -43,8 +43,7 @@ body{
 .subtext{
     font-size: 21px;
     text-align: center;
-    background: -webkit-linear-gradient( rgb(255, 255, 255), rgb(126, 126, 126));
-    -webkit-background-clip: text;
+    color: rgb(255, 255, 255);
     -webkit-text-fill-color: transparent;
     padding-bottom: 20px;
 }
