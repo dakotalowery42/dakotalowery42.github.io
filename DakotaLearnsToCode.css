@@ -44,7 +44,6 @@ body{
     font-size: 21px;
     text-align: center;
     color: rgb(255, 255, 255);
-    -webkit-text-fill-color: transparent;
     padding-bottom: 20px;
 }
 ul{
