@@ -14,8 +14,82 @@
             </ul>
         </div>
         <h1 class="Heading">Coding Journey</h1>
-        <p class="subtext">My Coding Journey started with me learning how to use Python to help automate GIS Geoprocessing Tasks.<br> I was immediately intrigued and wanted to learn new ways to use the computer to work smarter, not harder.<br>I learned about <a target="_blank" href="https://pdxcodeguild.com">PDX Code Guild</a> and I have enjoyed everything that I have learned so far, and hope to continue to learn more everyday</p>
-        <h2 class="subtext" Stay Hungry, Stay Foolish></h2>
+        <!-- <p class="subtext">My Coding Journey started with me learning how to use Python to help automate GIS Geoprocessing Tasks.<br> I was immediately intrigued and wanted to learn new ways to use the computer to work smarter, not harder.<br>I learned about <a target="_blank" href="https://pdxcodeguild.com">PDX Code Guild</a> and I have enjoyed everything that I have learned so far, and hope to continue to learn more everyday</p> -->
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/timeline.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<figure class="highcharts-figure">
+    <div id="container"></div>
+    <h5 class="highcharts-description">
+        Timeline charts are used to place tasks on a time axis,
+        such as this example showing the major tasks in {{post.title}}.
+    </h5>
+</figure>
+<script>
+  Highcharts.chart('container', {
+    chart: {
+        type: 'timeline'
+    },
+    accessibility: {
+        screenReaderSection: {
+            beforeChartFormat: '<h5>{chartTitle}</h5>' +
+                '<div>{typeDescription}</div>' +
+                '<div>{chartSubtitle}</div>' +
+                '<div>{chartLongdesc}</div>' +
+                '<div>{viewTableButton}</div>'
+        },
+        point: {
+            valueDescriptionFormat: '{index}. {point.label}. {point.description}.'
+        }
+    },
+    xAxis: {
+        visible: false
+    },
+    yAxis: {
+        visible: false
+    },
+    title: {
+        text: '{{post.title}} Project Timeline'
+    },
+    colors: [
+        '#7ac143',
+    ],
+    series: [{
+        data: [{
+            name: 'Python',
+            label: '2019-2020: Python',
+            description: 'Python to help automate GIS Geoprocessing Tasks'
+        }, {
+            name: 'PDX Code Guild: Intro to Coding',
+            label: '2021',
+            description: 'Began learning python and other languages.'
+        }, {
+            name: 'Python',
+            label: '2021',
+            description: 'Learned new automation skills with Python: How to automatically like pictures on Instagram'
+        }, {
+            name: 'HTML',
+            label: '2021',
+            description: 'Learned about front end web development and how to set up web pages'
+        }, {
+            name: 'CSS',
+            label: '2021',
+            description: 'Learned about the front end design of the web pages and how to give sites style'
+        }, {
+            name: 'JavaScript',
+            label: '2021',
+            description: 'Learned about the backend development of websites and how to make the webpage more useful to the user.'
+        },{
+            name: 'Django',
+            label: '2021',
+            description: 'Learned about the administrative side of web development and how to mangae diata from different users.'
+        }
+      ]
+    }]
+});
+</script>
+        <h2 class="subtext">Stay Hungry, Stay Foolish</h2>
     </body>
     <footer class="footer">
         <div id="widget ">
