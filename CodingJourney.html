@@ -21,10 +21,6 @@
 <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 <figure class="highcharts-figure">
     <div id="container"></div>
-    <h5 class="highcharts-description">
-        Timeline charts are used to place tasks on a time axis,
-        such as this example showing the major tasks in {{post.title}}.
-    </h5>
 </figure>
 <script>
   Highcharts.chart('container', {
@@ -50,17 +46,13 @@
         visible: false
     },
     title: {
-        text: '{{post.title}} Project Timeline'
+        text: 'Coding Journey'
     },
     colors: [
         '#7ac143',
     ],
     series: [{
         data: [{
-            name: 'Python',
-            label: '2019-2020: Python',
-            description: 'Python to help automate GIS Geoprocessing Tasks'
-        }, {
             name: 'PDX Code Guild: Intro to Coding',
             label: '2021',
             description: 'Began learning python and other languages.'
