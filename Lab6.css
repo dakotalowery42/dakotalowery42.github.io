@@ -21,6 +21,11 @@ h1 {
   text-align: center;
   background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(0, 0, 0));
 }
+p {
+  color: whitesmoke;
+  font-size: 21px;
+  text-align: center;
+}
 .user {
   font-size: 21px;
   text-align: left;
