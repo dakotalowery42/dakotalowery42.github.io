@@ -16,6 +16,14 @@ h1{
   text-align: center;
   background: -webkit-linear-gradient( rgb(255, 255, 255), rgb(0, 0, 0));
 } 
+h3 {
+  font-size: 21px;
+  text-align: center;
+  color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: black;
+}
 img{
   align-items: left;
   height:150px;
