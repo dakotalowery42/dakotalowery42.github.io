@@ -1,33 +1,23 @@
 body {
-  background-color: #0d0c0a;
-  font-family: "Helvetica";
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  transition: background-color 0.5s ease;
 }
-
-#mapid {
-  height: 400px;
-  width: 600px;
+body{
+  background-color:#0d0c0a;
+  font-family: 'Helvetica';
 }
-.maps {
+.center {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-h1 {
+h1{
   font-size: 42px;
   text-align: center;
-  background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(0, 0, 0));
-}
-p {
-  color: whitesmoke;
-  font-size: 21px;
-  text-align: center;
-}
-.user {
-  font-size: 21px;
-  text-align: left;
-  color: rgb(201, 201, 201);
+  background: -webkit-linear-gradient( rgb(255, 255, 255), rgb(0, 0, 0));
+} 
+img{
+  align-items: left;
+  height:150px;
+  width:150px;
 }
