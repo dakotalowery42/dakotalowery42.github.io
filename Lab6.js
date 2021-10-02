@@ -16,57 +16,57 @@ $("#btn").on('click', function(){
         if(weather == 'clear sky'){
             $('body').css({"background-color":"LightYellow"})
             var clearskyImg = document.createElement('img');
-            clearskyImg.src = "LabWeatherAPI/weathericons/clearsky.png";
+            clearskyImg.src = "/Users/dakotalowery/Desktop/PDX_Code_Guild/pdx_code/dakotalowery42.github.io/weathericons/clearsky.png";
             document.getElementById('div1').appendChild(clearskyImg);
         }else if(weather == 'broken clouds'){
             $('body').css({"background-color":"DarkGray"})
             var brokencloudsImg = document.createElement('img');
-            brokencloudsImg.src = "LabWeatherAPI/weathericons/broeknclouds.png";
+            brokencloudsImg.src = "/Users/dakotalowery/Desktop/PDX_Code_Guild/pdx_code/dakotalowery42.github.io/weathericons/broeknclouds.png";
             document.getElementById('div1').appendChild(brokencloudsImg);
         }else if(weather == 'scattered clouds'){
             $('body').css({"background-color":"Gray"})
             var scatteredcloudsImg = document.createElement('img');
-            scatteredcloudsImg.src = "LabWeatherAPI/weathericons/scatteredclouds.png";
+            scatteredcloudsImg.src = "/Users/dakotalowery/Desktop/PDX_Code_Guild/pdx_code/dakotalowery42.github.io/weathericons/scatteredclouds.png";
             document.getElementById('div1').appendChild( scatteredcloudsImg);
         }else if(weather == 'overcast clouds'){
             $('body').css({"background-color":"Gray"})
             var overcastcloudsImg = document.createElement('img');
-            overcastcloudsImg.src = "LabWeatherAPI/weathericons/overcastclouds.png";
+            overcastcloudsImg.src = "/Users/dakotalowery/Desktop/PDX_Code_Guild/pdx_code/dakotalowery42.github.io/weathericons/overcastclouds.png";
             document.getElementById('div1').appendChild(overcastcloudsImg);
         }else if(weather == 'few clouds'){
             $('body').css({"background-color":"LightGray"})
             var fewcloudsImg = document.createElement('img');
-            fewcloudsImg.src = "LabWeatherAPI/weathericons/fewclouds.png";
+            fewcloudsImg.src = "/Users/dakotalowery/Desktop/PDX_Code_Guild/pdx_code/dakotalowery42.github.io/weathericons/fewclouds.png";
             document.getElementById('div1').appendChild(fewcloudsImg);
         }else if(weather == 'shower rain'){
             $('body').css({"background-color":"Blue"})
             var showerrainImg = document.createElement('img');
-            showerrainImg.src = "LabWeatherAPI/weathericons/showerrain.png";
+            showerrainImg.src = "/Users/dakotalowery/Desktop/PDX_Code_Guild/pdx_code/dakotalowery42.github.io/weathericons/showerrain.png";
             document.getElementById('div1').appendChild(showerrainImg);
         }else if(weather == 'rain'){
         $('body').css({"background-color":"DarkBlue"})
             var rainImg = document.createElement('img');
-            rainImg.src = "LabWeatherAPI/weathericons/rain.png";
+            rainImg.src = "/Users/dakotalowery/Desktop/PDX_Code_Guild/pdx_code/dakotalowery42.github.io/weathericons/rain.png";
             document.getElementById('div1').appendChild(rainImg);
         }else if(weather == 'thunderstorm'){
             $('body').css({"background-color":"DarkBlue"})
             var thunderstormImg = document.createElement('img');
-            thunderstormImg.src = "LabWeatherAPI/weathericons/thunderstorm.png";
+            thunderstormImg.src = "/Users/dakotalowery/Desktop/PDX_Code_Guild/pdx_code/dakotalowery42.github.io/weathericons/thunderstorm.png";
             document.getElementById('div1').appendChild(thunderstormImg);
         }else if(weather == 'snow'){
             $('body').css({"background-color":"Gainsboro"})
             var snowImg = document.createElement('img');
-            snowImg.src = "LabWeatherAPI/weathericons/snow.png";
+            snowImg.src = "/Users/dakotalowery/Desktop/PDX_Code_Guild/pdx_code/dakotalowery42.github.io/weathericons/snow.png";
             document.getElementById('div1').appendChild(snowImg);
         }else if(weather == 'mist'){
         $('body').css({"background-color":"LightBlue"})
             var mistImg = document.createElement('img');
-            mistImg.src = "LabWeatherAPI/weathericons/mist.png";
+            mistImg.src = "/Users/dakotalowery/Desktop/PDX_Code_Guild/pdx_code/dakotalowery42.github.io/weathericons/mist.png";
             document.getElementById('div1').appendChild(mistImg);
         }else if(weather == 'light rain'){
             $('body').css({"background-color":"LightBlue"})
             var lightrainImg = document.createElement('img');
-            lightrainImg.src = "LabWeatherAPI/weathericons/lightrain.png";
+            lightrainImg.src = "/Users/dakotalowery/Desktop/PDX_Code_Guild/pdx_code/dakotalowery42.github.io/weathericons/lightrain.png";
             document.getElementById('div1').appendChild(lightrainImg);
         }
     })
