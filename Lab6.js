@@ -2,7 +2,7 @@ const text_field = document.getElementById("weahter_input");
 const key = apikey()
 $("#btn").on('click', function(){
     console.log(text_field.value)
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${text_field.value}&appid=${key}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${text_field.value}&appid=${key}`)
     // console.log(key)
     .then((response)=>{
     return response.json()
