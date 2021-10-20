@@ -20,9 +20,7 @@ h3 {
   font-size: 21px;
   text-align: center;
   color: black;
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: .5px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-fill-color: red;
 }
 img{
   align-items: left;
