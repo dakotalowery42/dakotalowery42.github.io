@@ -2,13 +2,13 @@ const text_field = document.getElementById("weahter_input");
 const key = apikey()
 $("#btn").on('click', function(){
     console.log(text_field.value)
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${text_field.value}&appid=${key}`)
-    // console.log(key)
+    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${text_field.value}&appid=d75899b044a505479f7a235d2aae3ced`)
+    console.log(key)
     .then((response)=>{
     return response.json()
     })
     .then((data)=>{
-        // console.log(data.weather[0].description)
+        console.log(data.weather[0].description)
         const weather = data.weather[0].description
         console.log(weather)
         const weatherDiv = document.getElementById("div1");
