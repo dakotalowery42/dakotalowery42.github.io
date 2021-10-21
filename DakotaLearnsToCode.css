@@ -219,3 +219,12 @@ a:hover {
     -moz-border-radius: 10px 10px 10px 10px;
     -webkit-border-radius: 10px 10px 10px 10px;
 }
+
+.python_img {
+    height: 300;
+    width: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
