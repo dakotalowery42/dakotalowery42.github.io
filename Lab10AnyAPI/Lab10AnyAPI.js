@@ -25,7 +25,7 @@ state_input.addEventListener("input", function () {
 $("#btn").on("click", function (e) {
   e.preventDefault();
   console.log(text_field.value);
-  fetch(`http://localhost:8010/proxy/states/${text_field.value}/current.json`)
+  fetch(`https://dakotalowery42.github.io/Lab10AnyAPI/statedata/${text_field.value}.json`)
     .then((response) => {
       return response.json();
     })
