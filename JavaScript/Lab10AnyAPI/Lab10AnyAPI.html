@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="Lab10AnyAPI.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script src="Lab10AnyAPI.js" async defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="animation.css" />
+  </head>
+  <body>
+    <h1 class="State">COVID19 Tracking App</h1>
+    <input id="state_input" type="text" class="state_input" />
+    <span id="state_info" style="display: none; color: red"
+      >You must use the States 2 letter abbreviation(ex. NC) 
+    </span>
+    <span id="state_name" style="display: none; color: red"
+      >You must input a States abbreviation(ex. NC) to return data
+    </span>
+    <button id="btn">Click to View COVID19 Data</button>
+    <div id="chart_div"></div>
+    <div class="warning">This data was last updated 3-7-2021</div>
+  </body>
+</html>

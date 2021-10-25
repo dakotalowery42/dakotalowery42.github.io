@@ -1,0 +1,230 @@
+body{
+    background-color:#0d0c0a;
+    font-family: 'Helvetica';
+}
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.center img{
+    align-items: left;
+    height:150px;
+    width:150px;
+    border-width: 1px;
+    border-color: blanchedalmond;
+}
+.center span{
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.5s;
+}
+.Heading{
+    font-size: 42px;
+    text-align: center;
+    background: -webkit-linear-gradient( rgb(255, 255, 255), rgb(0, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 20px;
+    position: relative;
+    top:-100px;
+    animation-name: from-top;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+} 
+.GIS-Portfolio{
+    font-size: 21;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.subtext{
+    padding: 20px;
+    font-size: 21px;
+    text-align: center;
+    background: -webkit-linear-gradient( rgb(255, 255, 255), rgb(201, 201, 201));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 20px;
+}
+ul{
+    display: flex;
+    list-style-type:none;
+    flex-direction: row;
+    padding: 10px;
+    justify-content:space-evenly;
+    color: rgb(255, 255, 255);
+}
+ul li{
+    padding: 30px;
+    cursor: pointer
+}
+.GIS-Portfolio{
+    margin-right: auto;
+}
+button{
+    font-size: 15;
+    color: rgb(255, 255, 255);
+    background-color: #0d0c0a;
+    width: 200px;
+    height: 50px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(140,140,140,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(140,140,140,1);
+    box-shadow: 10px 10px 5px 0px rgba(140,140,140,1);
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }  
+button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+button:hover span {
+    padding-right: 25px;
+}
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.ft14 {
+    font-size: 44px !important;
+    color:rgb(255, 255, 255);
+}
+.footer{
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    background-color:#0d0c0a;
+}
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: center;
+    padding-top: 30px;
+}
+.card{
+    display:flex;
+    align-items: center; 
+    justify-content: center;
+}
+.card-img-top{
+    width: 50;
+    height: auto;
+}
+.btn{
+    border-width: 1px;
+    border-color: white;
+}
+
+.center-pic-1{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border-radius: 14px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(140,140,140,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(140,140,140,1);
+    box-shadow: 10px 10px 5px 0px rgba(140,140,140,1);
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+}
+
+.center-pic{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    animation-name: move-around;
+    animation-duration: 2s;
+    animation-direction: reverse;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+@keyframes move-around{
+
+    0%{border-color: white; border-radius: 0 0 0 0; top:0px; left:0px}
+    25%{border-color: red; border-radius: 50% 0 0 0; top:0px; left:50px}
+    50%{border-color: blue; border-radius: 50% 50% 0 0; top:50px; left:0px}
+    75%{border-color: green; border-radius: 50% 50% 50% 0; top:0px; left:50px}
+    100%{border-color: white; border-radius: 50%;top:0px; left:0px}
+}
+@keyframes from-top{
+    0%{top:-50px}
+    100%{top:0px}
+}
+a{
+    color: white;
+}
+a:link {
+    text-decoration: none;
+  }
+a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+.video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.col{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-deck{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.highcharts-figure{
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(140,140,140,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(140,140,140,1);
+    box-shadow: 10px 10px 5px 0px rgba(140,140,140,1);
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+}
+
+.python_img {
+    height: 300;
+    width: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
