@@ -18,6 +18,75 @@
             If you have any tips or suggestions for me please do not hesitate to reach out to me on the home page!
             When I am not knee deep coding, I am either making maps, running, or traveling with my family!</p>
         <img src="Travel.png" alt="Machu Picchu" class="center-pic">
+        <h1 class="Heading">Coding Journey</h1>
+        <!-- <p class="subtext">My Coding Journey started with me learning how to use Python to help automate GIS Geoprocessing Tasks.<br> I was immediately intrigued and wanted to learn new ways to use the computer to work smarter, not harder.<br>I learned about <a target="_blank" href="https://pdxcodeguild.com">PDX Code Guild</a> and I have enjoyed everything that I have learned so far, and hope to continue to learn more everyday</p> -->
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/timeline.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<figure class="highcharts-figure">
+    <div id="container"></div>
+</figure>
+<script>
+  Highcharts.chart('container', {
+    chart: {
+        type: 'timeline'
+    },
+    accessibility: {
+        screenReaderSection: {
+            beforeChartFormat: '<h5>{chartTitle}</h5>' +
+                '<div>{typeDescription}</div>' +
+                '<div>{chartSubtitle}</div>' +
+                '<div>{chartLongdesc}</div>' +
+                '<div>{viewTableButton}</div>'
+        },
+        point: {
+            valueDescriptionFormat: '{index}. {point.label}. {point.description}.'
+        }
+    },
+    xAxis: {
+        visible: false
+    },
+    yAxis: {
+        visible: false
+    },
+    title: {
+        text: 'Coding Journey'
+    },
+    colors: [
+        '#0d0c0a',
+    ],
+    series: [{
+        data: [{
+            name: 'PDX Code Guild: Intro to Coding',
+            label: 'Febuary 2021',
+            description: 'Began learning python and other languages.'
+        }, {
+            name: 'Python',
+            label: 'March - April 2021',
+            description: 'Learned new automation skills with Python: How to automatically like pictures on Instagram'
+        }, {
+            name: 'HTML',
+            label: 'April 2021',
+            description: 'Learned about front end web development and how to set up web pages'
+        }, {
+            name: 'CSS',
+            label: 'April 2021',
+            description: 'Learned about the front end design of the web pages and how to give sites style'
+        }, {
+            name: 'JavaScript',
+            label: 'April - May 2021',
+            description: 'Learned about the backend development of websites and how to make the webpage more useful to the user.'
+        },{
+            name: 'Django',
+            label: 'June - July 2021',
+            description: 'Learned about the administrative side of web development and how to mangae diata from different users.'
+        }
+      ]
+    }]
+});
+</script>
+        <h2 class="subtext">Stay Hungry, Stay Foolish</h2>
     </body>
     <footer class="footer">
         <div id="widget ">
